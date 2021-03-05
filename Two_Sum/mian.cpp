@@ -1,10 +1,15 @@
-﻿// Two_Sum.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿#include <iostream>
+#include "Solution.h"
+using namespace std;
 
-#include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
+//1. 两数之和
+int main(){
+    Solution solution;
+    vector<int> nums = { 2,7,11,15 };
+    vector<int> result= solution.twoSum(nums, 9);
+    for (int v : result) {
+        cout << v << " ";
+    }
+    return 0;
 }
 
